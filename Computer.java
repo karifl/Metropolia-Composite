@@ -8,14 +8,14 @@ public class Computer {
 	
 		
 		// TODO Auto-generated method stub
-		Component Cabinet = new Composite("Metal covered cabinet");
-		Component Motherboard = new Composite("Zephyr");
+		Component Cabinet = new Composite("Metal covered cabinet", 80.00);
+		Component Motherboard = new Composite("Zephyr", 70.00);
 		Component NIC = new ComputerPart("Infiltrator 5", 245.00);
 		Component HD = new ComputerPart("Buffalo 4 TB", 200.00);
 		Component GraphicCard = new ComputerPart("Nvidia GeForce 3", 250.00);
 		Component CPU = new ComputerPart("Intel X", 210.00);
 		Component RAM = new ComputerPart("Corsair DDR3 4Ghz", 90.00);
-		Component Computer = new Composite("HiveMind");
+		Component Computer = new Composite("HiveMind", 230.00);
 		
 		Motherboard.addComponent(RAM);
 		Motherboard.addComponent(CPU);
