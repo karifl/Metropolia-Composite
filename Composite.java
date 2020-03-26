@@ -5,11 +5,12 @@ import java.util.List;
 
 public class Composite  implements Component{
 	public String name;
-	
+	public double price;
 	List<Component> components = new ArrayList<Component>();
 	
-	public Composite(String name) {
+	public Composite(String name, double price) {
 		this.name = name;
+		this.price=price;
 	}
 	
 	public void addComponent(Component com) {
@@ -21,7 +22,6 @@ public class Composite  implements Component{
 	}
 	
 	public double getPrice() {
-		double price =0;
 		
 		for (Component comp: components) {
 			price = price + comp.getPrice();
